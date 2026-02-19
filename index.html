@@ -7,15 +7,63 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="app">
-      <h1>Spark</h1>
-      <div class="timer" id="timer">25:00</div>
-      <div class="controls">
-        <button id="start">Start</button>
-        <button id="reset">Reset</button>
+    <body>
+      <div class="app">
+        <header class="top-bar">
+          <div class="date-nav">
+            <button class="icon-btn" aria-label="Previous day">‹</button>
+            <div class="date-text">18th June 2025</div>
+            <button class="icon-btn" aria-label="Next day">›</button>
+          </div>
+    
+          <button class="pill">
+            <span>9.3 hr</span>
+            <span class="chev">♕</span>
+          </button>
+        </header>
+    
+        <section class="stats">
+          <div class="stat">
+            <div class="value muted">2.5h</div>
+            <div class="label">Inactivity</div>
+          </div>
+    
+          <div class="divider"></div>
+    
+          <div class="stat">
+            <div class="value accent-purple">5h</div>
+            <div class="label">Session Time</div>
+          </div>
+    
+          <div class="divider"></div>
+    
+          <div class="stat">
+            <div class="value accent-red">1h</div>
+            <div class="label">Break Time</div>
+          </div>
+        </section>
+    
+        <section class="timeline">
+          <div class="times">
+            <span>6:48 AM</span>
+            <span>11:00 PM</span>
+          </div>
+    
+          <div class="bar">
+            <div class="segment purple" style="width: 18%"></div>
+            <div class="segment red" style="width: 10%"></div>
+            <div class="segment purple" style="width: 16%"></div>
+            <div class="segment gray" style="width: 12%"></div>
+            <div class="segment purple" style="width: 14%"></div>
+            <div class="segment red" style="width: 12%"></div>
+            <div class="segment purple" style="width: 18%"></div>
+          </div>
+    
+          <div class="session">
+            <div class="session-title">7th Session</div>
+            <div class="session-time">01:20 PM - 02:00 PM</div>
+          </div>
+        </section>
       </div>
-    </div>
-
-    <script src="renderer.js"></script>
   </body>
 </html>

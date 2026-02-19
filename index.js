@@ -4,13 +4,17 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 420,
     height: 600,
-    resizable: false,
+    resizable: true,
+    minimizable: true,
+    maximizable: true,
+    fullscreenable: true,
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true
     }
   });
 
+  win.maximize(); // fills the screen but keeps normal window controls
   win.loadFile("index.html");
 }
 
